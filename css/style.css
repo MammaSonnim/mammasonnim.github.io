@@ -1,3 +1,64 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'mammasonnim';
+  src: url('../font/mammasonnim.eot?98070995');
+  src: url('../font/mammasonnim.eot?98070995#iefix') format('embedded-opentype'),
+       url('../font/mammasonnim.woff?98070995') format('woff'),
+       url('../font/mammasonnim.ttf?98070995') format('truetype'),
+       url('../font/mammasonnim.svg?98070995#mammasonnim') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "mammasonnim";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-github:before { content: '\e803'; } /* '' */
+.icon-skype:before { content: '\e804'; } /* '' */
+.icon-vkontakte:before { content: '\e805'; } /* '' */
+.icon-html5:before { content: '\e806'; } /* '' */
+.icon-css3:before { content: '\e807'; } /* '' */
+.icon-codeopen:before { content: '\e808'; } /* '' */
+.icon-left-dir:before { content: '\e809'; } /* '' */
+.icon-gplus-squared:before { content: '\e80a'; } /* '' */
+.icon-right-dir:before { content: '\e80b'; } /* '' */
+.icon-gmail:before { content: '\e80c'; } /* '' */
+
+
+
 /* Base */
 
 body {
@@ -26,6 +87,7 @@ img {
 }
 
 .page-title {
+    margin: 100px 0 50px 0;
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
@@ -35,6 +97,9 @@ img {
 /* Sections */
 
 .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
     background-color: #543a67;
 }
 
@@ -117,3 +182,112 @@ img {
 .promo__img img {
     border-radius: 50%;
 }
+
+.features {
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+}
+
+.feature {
+    position: relative;
+    display: inline-block;
+    width: 195px;
+    height: 195px;
+    margin: 0 40px 40px 0;
+    vertical-align: top;
+    background-color: #815e84;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.feature:nth-of-type(4) {
+    margin-right: 0;
+}
+
+.feature:last-child {
+    margin-right: 0;
+}
+
+.feature:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.feature__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.feature__title:before {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    font-size: 67px;
+}
+
+.icon-html5:before {
+    font-size: 80px;
+}
+
+.text-bem {
+    font-size: 50px;
+}
+
+.text-js {
+    font-size: 67px;
+    font-weight: bold;
+}
+
+.text-ps {
+    font-size: 67px;
+}
+
+.icon-github:before {
+    font-size: 75px;
+}
+
+.feature__center {
+    position: absolute;
+    top: 0;
+    display: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 171px;
+    height: 171px;
+    padding: 12px;
+    background-color: #eca546;
+    border-radius: 50%;
+}
+
+.feature:hover .feature__center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.feature__text {
+    font-size: 16px;
+}
+
+.feature__link {
+    color: #ffffff;
+}
+
+.feature__link:hover {
+    color: #eeeeee;
+}
+
