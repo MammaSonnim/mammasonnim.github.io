@@ -402,5 +402,49 @@ img {
     background-color: #eca546;
 }
 
+.contacts {
+    text-align: center;
+    font-size: 0;
+}
+
+.contact {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #815e84;
+    border-radius: 50%;
+}
+
+.contact:last-child {
+    margin-right: 0;
+}
+
+.contact:hover {
+    background-color: #eca546;
+}
+
+.contact:before {
+    width: auto;
+    font-size: 50px;
+    line-height: 120px;
+}
+
+.icon-gmail:before {
+    font-size: 37px;
+}
+
+.footer {
+    padding: 60px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #543a67;
+}
+
+
  
 
