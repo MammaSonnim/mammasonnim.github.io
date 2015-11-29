@@ -10,7 +10,7 @@
     <header class="header">
         <div class="container-center clearfix">
             <nav class="menu">
-                <a href="#" class="menu__item menu__item--active">Обо мне</a>
+                <a href="#" class="menu__item menu__item_active">Обо мне</a>
                 <a href="#" class="menu__item">Проекты</a>
                 <a href="#" class="menu__item">Контакты</a>
             </nav>
@@ -20,7 +20,7 @@
         <section class="promo">
            <div class="container-center clearfix">
                 <p class="promo__text">
-                    <span class="promo__text--large">&mdash;&#160;Привет!</span>
+                    <span class="promo__text_large">&mdash;&#160;Привет!</span>
                     Меня зовут Крикливая Яна,
                     я&#160;начинающий веб-разработчик,
                     а&#160;эта&#160;страница&#160;&mdash;мое портфолио.
@@ -31,10 +31,10 @@
             </div>
         </section>
         <div class="container-center">
-            <section class="features">
+            <section class="page-section features">
                 <h1 class="page-title">Мои навыки и инструменты</h1>
                 <div class="feature">
-                    <h2 class="feature__title icon-html5">HTML</h2>
+                    <h2 class="feature__title icon-html5">HTML5</h2>
                     <div class="feature__center">
                         <p class="feature__text">HTML5&#160;&mdash; аккуратно, логично, семантично и&#160;валидно</p>
                     </div>
@@ -73,45 +73,45 @@
                 </div>
             </section>
         </div>
-        <section class="projects">
+        <section class="page-section projects">
             <h1 class="page-title">Выполненные проекты</h1>
             <div class="slider">
-                <input class="slider__toggle" id="toggle-1" name="toggle" type="radio">
-                <input class="slider__toggle" id="toggle-2" name="toggle" type="radio">
-                <input class="slider__toggle" id="toggle-3" name="toggle" type="radio">
-                <div class="controls">
-                    <label class="slider__label" for="toggle-1"></label>
-                    <label class="slider__label" for="toggle-2"></label>
-                    <label class="slider__label" for="toggle-3"></label>
-                </div>
+                <input class="slider__toggle slider__toggle-1" id="toggle-1" name="toggle" type="radio">
+                <input class="slider__toggle slider__toggle-2" id="toggle-2" name="toggle" type="radio" checked>
+                <input class="slider__toggle slider__toggle-3" id="toggle-3" name="toggle" type="radio">
                 <div class="slider__inner">
                     <div class="slides">
                         <div class="slide">
-                            <div class="slide__title"></div>
-                            <div class="slide__text"></div>
-                            <div class="slide__img">
-                                <img src="#" alt="Техномарт">
-                            </div>
+                            <a class="slide__img"  href="http://mammasonnim.github.io/Technomart/">
+                                <img src="./images/project-technomart.jpg" alt="Техномарт" width="600" height="420">
+                            </a>
+                            <h2 class="slide__title">Техномарт</h2>
+                            <p class="slide__text">Выпускной проект на курсах HTML Academy</p>
                         </div>
                         <div class="slide">
-                            <div class="slide__title"></div>
-                            <div class="slide__text"></div>
-                            <div class="slide__img">
-                                <img src="#" alt="Проект 2">
-                            </div>
+                            <a class="slide__img"  href="http://mammasonnim.github.io/Technomart/">
+                                <img src="./images/project-template.png" alt="Проект 2" width="600" height="420">
+                            </a>
+                            <h2 class="slide__title">Проект 2</h2>
+                            <p class="slide__text">Скоро</p>
                         </div>
                         <div class="slide">
-                            <div class="slide__title"></div>
-                            <div class="slide__text"></div>
-                            <div class="slide__img">
-                                <img src="#" alt="Проект 3">
-                            </div>
+                            <a class="slide__img"  href="http://mammasonnim.github.io/Technomart/">
+                                <img src="./images/project-template.png" alt="Проект 3" width="600" height="420">
+                            </a>
+                            <h2 class="slide__title">Проект 3</h2>
+                            <p class="slide__text">Скоро</p>
                         </div>
                     </div>
                 </div>
+                <div class="slider__controls">
+                    <label class="slider__control slider__control-1" for="toggle-1"></label>
+                    <label class="slider__control slider__control-2" for="toggle-2"></label>
+                    <label class="slider__control slider__control-3" for="toggle-3"></label>
+                </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="page-section contacts">
             <h1 class="page-title">Как со мной связаться?</h1>
             <div class="contact"></div>
             <div class="contact"></div>
