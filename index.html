@@ -1,128 +1,347 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="Iana Alekseeva - Frontend Developer / Scrum Master">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container-center clearfix">
-            <nav class="menu">
-                <a class="menu__item" href="#promo">Обо мне</a>
-                <a class="menu__item" href="#projects">Проекты</a>
-                <a class="menu__item" href="#contacts">Контакты</a>
-            </nav>
-        </div>
-    </header>
-    <article class="main">
-        <section class="promo" id="promo">
-           <div class="container-center clearfix">
-                <p class="promo__text">
-                    <span class="promo__text_large">&mdash;&#160;Привет!</span>
-                    Меня зовут Крикливая Яна,
-                    я&#160;начинающий веб-разработчик,
-                    а&#160;эта&#160;страница&#160;&mdash; мое портфолио.
-               </p>
-                <div class="promo__img">
-                    <img src="images/avatar.jpg" alt="Яна Крикливая" width="285" height="285">
-                </div>
-            </div>
-        </section>
-        <div class="container-center">
-            <section class="page-section features">
-                <h1 class="page-title">Мои навыки и инструменты</h1>
-                <div class="feature">
-                    <h2 class="feature__title icon-html5">HTML5</h2>
-                    <div class="feature__center">
-                        <p class="feature__text">HTML5&#160;&mdash; аккуратно, логично, семантично и&#160;валидно</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2 class="feature__title icon-css3">CSS3</h2>
-                    <div class="feature__center">
-                        <p class="feature__text">CSS3&#160;&mdash; кроссбраузерно и&#160;наиболее близко к&#160;макету</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2 class="feature__title text-bem">BEM</h2>
-                    <div class="feature__center">
-                        <p class="feature__text">Использую методологию БЭМ по именованию классов</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2 class="feature__title text-js">JS</h2>
-                    <div class="feature__center">
-                        <p class="feature__text">Решаю несложные задачи на чистом JS или JQuery</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2 class="feature__title icon-github">GIT</h2>
-                    <div class="feature__center">
-                        <p class="feature__text">Использую систему контроля версий Git
-                            <a class="feature__link" href="https://github.com/MammaSonnim/">аккаунт&#160;GitHub</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <h2 class="feature__title text-ps">PS</h2>
-                    <div class="feature__center">
-                        <p class="feature__text">Делаю несложные макеты в Photoshop</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="page-section projects" id="projects">
-            <h1 class="page-title">Выполненные проекты</h1>
-            <div class="slider">
-                <input class="slider__toggle slider__toggle-1" id="toggle-1" name="toggle" type="radio" checked>
-                <input class="slider__toggle slider__toggle-2" id="toggle-2" name="toggle" type="radio">
-                <input class="slider__toggle slider__toggle-3" id="toggle-3" name="toggle" type="radio">
-                <div class="slider__inner">
-                    <div class="slides">
-                        <div class="slide">
-                            <a class="slide__img"  href="http://mammasonnim.github.io/Technomart/" target="_blank">
-                                <img src="./images/project-technomart.jpg" alt="Техномарт" width="600" height="420">
-                            </a>
-                            <h2 class="slide__title">Техномарт</h2>
-                            <p class="slide__text">Выпускной проект на курсах HTML Academy</p>
-                        </div>
-                        <div class="slide">
-                            <a class="slide__img"  href="http://mammasonnim.github.io/Technomart/" target="_blank">
-                                <img src="./images/project-template.png" alt="Проект 2" width="600" height="420">
-                            </a>
-                            <h2 class="slide__title">Проект 2</h2>
-                            <p class="slide__text">Скоро</p>
-                        </div>
-                        <div class="slide">
-                            <a class="slide__img"  href="http://mammasonnim.github.io/Technomart/" target="_blank">
-                                <img src="./images/project-template.png" alt="Проект 3" width="600" height="420">
-                            </a>
-                            <h2 class="slide__title">Проект 3</h2>
-                            <p class="slide__text">Скоро</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__controls">
-                    <label class="slider__control slider__control-1" for="toggle-1"></label>
-                    <label class="slider__control slider__control-2" for="toggle-2"></label>
-                    <label class="slider__control slider__control-3" for="toggle-3"></label>
-                </div>
-            </div>
-        </section>
-        <section class="page-section contacts container-center" id="contacts">
-            <h1 class="page-title">Как со мной связаться?</h1>
+  <div class="page-wrapper">
+    <div class="page">
+      <div class="container">
+        <article class="header">
+          <div class="header__left">
+            <h1 class="header__name">
+              Iana&nbsp;Alekseeva – Frontend&nbsp;Developer, Scrum&nbsp;Master
+            </h1>
             <div class="contacts">
-                <a class="contact icon-gmail" href="mailto:yana.kriklivaya@gmail.com">yana.kriklivaya@gmail.com</a>
-                <a class="contact icon-skype" href="skype:zlobnyana?chat">Skype</a>
-                <a class="contact icon-vkontakte" href="https://vk.com/kyarun">VK</a>
+              <div class="contacts__item">
+                <ion-icon class="contacts__icon" name="location-outline"></ion-icon>
+                Warsaw, Poland
+              </div>
+              <div class="contacts__item">
+                <ion-icon class="contacts__icon" name="mail-outline"></ion-icon>
+                <a href="mailto:msonnim@gmail.com" class="contacts__link">msonnim@gmail.com</a>
+              </div>
+              <div class="contacts__item">
+                <ion-icon class="contacts__icon" name="logo-linkedin"></ion-icon>
+                <a href="https://www.linkedin.com/in/yana-alekseeva/" class="contacts__link">Linkedin</a>
+              </div>
+              <div class="contacts__item">
+                <ion-icon class="contacts__icon" name="logo-github"></ion-icon>
+                <a href="https://github.com/MammaSonnim" class="contacts__link">Github</a>
+              </div>
             </div>
-        </section>
-    </article>
-    <footer class="footer">
-        <p class="footer__text">Дизайн и верстка:<br> Яна Крикливая, 2015 г.</p>
-    </footer>
+          </div>
+          <div class="header__right">
+            <div class="photo">
+              <img src="images/photo.jpg" alt="Iana Alekseeva" class="photo__image">
+            </div>
+          </div>
+        </article>
+        <div class="main">
+          <div class="main__left">
+            <section class="block block_work">
+              <header class="block__header">
+                <h2 class="block__title">Experience</h2>
+              </header>
+              <div class="block__body">
+                <section class="experience">
+                  <h3 class="experience__position">Engineer, Scrum Master</h2>
+                  <div class="company">
+                    <div class="company__title">
+                      <ion-icon class="company__icon" name="business-outline"></ion-icon>
+                      Avito
+                    </div>
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      10/2016 - 04/2022
+                    </div>
+                    <div class="company__location">
+                      <ion-icon class="company__icon" name="location-outline"></ion-icon>Moscow, Russia
+                    </div>
+                  </div>
+                  <div class="experience__description">
+                    <p>
+                      Avito – the world’s most visited classified ads website and a company with a great engineering culture. 
+                    </p>
+                    <p>
+                      I came to the company as a junior and quit as a senior engineer.  
+                    </p>                    
+                    <p>
+                      I have been in the same team for many years, but have been working on different products and projects 
+                      (most of the time with a focus on professional seller experience) 
+                      on several platforms (avito.ru, pro.avito.ru, and their mobile versions).
+                    </p>
+
+                    <p>As a <b>frontend engineer</b>, I was</p>
+                    <ul>
+                      <li>
+                        developing interfaces using JS, Typescript, React, Redux
+                      </li>
+                      <li>
+                        working in close cooperation with other team members (frontend, backend, designer, product owner, QA, analyst)
+                      </li>
+                      <li>
+                        fighting for high test coverage in our projects
+                      </li>
+                      <li>
+                        (as the technical owner of one of the frontend-platforms) providing reviews, solving other teams' problems, managing tech-backlog
+                      </li>
+                      <li>
+                        improving developer experience
+                      </li>
+                    </ul>
+                    
+                    <p>As a <b>technical leader</b> in several projects, I was</p>
+                    <ul>
+                      <li>
+                        stimulating the discovery team to decompose the project by achievable goals
+                      </li>
+                      <li>
+                        creating roadmaps and setting goals for dev-team
+                      </li>
+                      <li>
+                        stimulating pair sessions (research/code/testing), holding ATDD sessions
+                      </li>
+                      <li>
+                        responsible for delivering features to production
+                      </li>
+                    </ul>
+
+                    <p>As a <b>scrum master</b>, I was</p>
+                    <ul>
+                      <li>
+                        teaching my team to do scrum according to the guide
+                      </li>
+                      <li>
+                        creating and improving various scenarios and checklists that allowed each team member to facilitate all scrum events
+                      </li>
+                      <li>
+                        launching various process experiments
+                      </li>
+                      <li>
+                        contributing to the company’s scrum-master community
+                      </li>
+                    </ul>                
+                  </div>
+                </section>
+                <section class="experience">
+                  <h3 class="experience__position">Junior Frontend Developer</h2>
+                  <div class="company">
+                    <div class="company__title">
+                      <ion-icon class="company__icon" name="business-outline"></ion-icon>
+                      Ostrovok (hotel booking service)
+                    </div>
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      08/2016 - 10/2016
+                    </div>
+                    <span class="company__location">
+                      <ion-icon class="company__icon" name="location-outline"></ion-icon>Moscow, Russia
+                    </span>
+                  </div>
+                  <div class="experience__description">
+                    <p>
+                      Unfortunately, I came to the company right before its crisis and staff reduction, so I didn't have time to significantly impact it (I only fixed several bugs and implemented one small feature).
+                    </p>
+                  </div>
+                </section>
+                <section class="experience">
+                  <h3 class="experience__position">HTML/CSS Developer</h2>
+                  <div class="company">
+                    <div class="company__title">
+                      <ion-icon class="company__icon" name="business-outline"></ion-icon>
+                      Rutorika Digital Solutions
+                    </div>
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      05/2016 - 08/2016
+                    </div>
+                    <span class="company__location">
+                      <ion-icon class="company__icon" name="location-outline"></ion-icon>Krasnodar, Russia
+                    </span>
+                  </div>
+                  <div class="experience__description">
+                    <p>
+                      I converted several designs to websites using Jade (Pug), BEM, and Gulp.
+                    </p>
+                  </div>
+                </section>
+                <section class="experience">
+                  <h3 class="experience__position">Irrelevant experience (Marketing)</h2>
+                  <div class="company">
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      2006 - 2016
+                    </div>
+                  </div>
+                  <span class="company__location">
+                    <ion-icon class="company__icon" name="location-outline"></ion-icon>Krasnodar, Russia
+                  </span>
+                </section>
+              </div>
+            </section>
+            <section class="block">
+              <header class="block__header">
+                <h2 class="block__title">Education</h2>
+              </header>
+              <div class="block__body">
+                <section class="experience">
+                  <h3 class="experience__position">Master's Degree in Marketing</h2>
+                  <div class="company">
+                    <div class="company__title">
+                      <ion-icon class="company__icon" name="ribbon-outline"></ion-icon>
+                      Kuban State University
+                    </div>
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      2003 - 2008
+                    </div>
+                    <span class="company__location">
+                      <ion-icon class="company__icon" name="location-outline"></ion-icon>Krasnodar, Russia
+                    </span>
+                  </div>
+                </section>
+                <section class="experience">
+                  <h3 class="experience__position">Professional Scrum Master I</h2>
+                  <div class="company">
+                    <div class="company__title">
+                      <ion-icon class="company__icon" name="ribbon-outline"></ion-icon>
+                      Scrum.org
+                    </div>
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      06/2020
+                    </div>
+                  </div>
+                </section>
+                <section class="experience">
+                  <h3 class="experience__position">Kanban System Design</h2>
+                  <div class="company">
+                    <div class="company__title">
+                      <ion-icon class="company__icon" name="ribbon-outline"></ion-icon>
+                      Kanban University
+                    </div>
+                    <div class="company__date">
+                      <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                      07/2021
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+          <div class="main__right">
+            <section class="block">
+              <header class="block__header">
+                <h2 class="block__title">Skills</h2>
+              </header>
+              <div class="block__body">
+                <ul class="tags">
+                  <li class="tags__item">HTML</li>
+                  <li class="tags__item">CSS</li>
+                  <li class="tags__item">JavaScript</li>
+                  <li class="tags__item">Typescript</li>
+                  <li class="tags__item">React</li>
+                  <li class="tags__item">Redux</li>
+                  <li class="tags__item">Git</li>
+                  <li class="tags__item">TDD</li>
+                  <li class="tags__item">ATDD</li>
+                  <li class="tags__item">Scrum</li>
+                  <li class="tags__item">Kanban</li>
+                  <li class="tags__item">OKR</li>
+                  <li class="tags__item">Jira</li>
+                </ul>
+              </div>
+            </section>
+            <section class="block">
+              <header class="block__header">
+                <h2 class="block__title">What do I like most:</h2>
+              </header>
+              <div class="block__body">
+                <ul>
+                  <li>
+                    to eat-my-dog-food – to be an active user of what I am creating
+                  </li>
+                  <li>
+                    to work in the self-sufficient team 
+                  </li>
+                  <li>
+                    small iterations of releases and low time to market
+                  </li>
+                  <li>
+                    transparency on all levels
+                  </li>
+                  <li>
+                    to have a strong focus on one complicated product for digging-deeper
+                  </li>
+                  <li>
+                    to write testable and easy-to-support code
+                  </li>
+                  <li>
+                    to implement good team practices: zero bug policy, working in pairs (research/code/testing), 
+                    Acceptance Test Driven Development (ATDD), etc
+                  </li>
+                  <li>
+                    to improve the developer's experience, app's performance metrics, and accessibility (I am not a pro at this stuff, but would like to be)
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="block">
+              <header class="block__header">
+                <h2 class="block__title">Languages</h2>
+              </header>
+              <div class="block__body">
+                <div class="language">
+                  <div class="language__desc">
+                    <span class="language__title">English –</span>
+                    <span class="language__lvl">B2</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <div class="language__desc">
+                    <span class="language__title">Polish –</span>
+                    <span class="language__lvl">A2</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <div class="language__desc">
+                    <span class="language__title">Russian –</span>
+                    <span class="language__lvl">native</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="block">
+              <header class="block__header">
+                <h2 class="block__title">JS community</h2>
+              </header>
+              <div class="company">
+                  <div class="company__title company__title--inline">
+                    <ion-icon class="company__icon" name="people-outline"></ion-icon>
+                    HTML Academy
+                  </div>
+                  <div class="company__date">
+                    <ion-icon class="company__icon" name="calendar-outline"></ion-icon>
+                    2017 - 2018
+                  </div>
+                </div>
+                Mentored 5 students (HTML, CSS).
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
