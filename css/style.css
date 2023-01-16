@@ -91,6 +91,8 @@ a {
 
 .download-btn {
   padding: 10px;
+  text-decoration: none;
+  border: 1px solid #4169E1;
 }
 
 .download__icon {
@@ -116,10 +118,6 @@ a {
 
   .block + .block {
     margin-top: 30px;
-  }
-
-  .download-btn {
-    display: none;
   }
 }
 
