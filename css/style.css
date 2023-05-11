@@ -138,11 +138,23 @@ a {
     margin-top: 6px;
   }
 
+  .header {
+    display: block;
+  }
+
   .header__right {
-    max-width: 160px;
+    display: none;
   }
 
   .download-btn {
     display: none;
+  }
+
+  .experience + .experience {
+    margin-top: 16px;
+  }
+
+  .block_work .experience + .experience {
+    margin-top: 28px;
   }
 }
